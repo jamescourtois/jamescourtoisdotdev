@@ -42,7 +42,7 @@
 		<form id="contact-form" action="https://api.form-data.com/f/JFPRHf1ZOogCA1" method="POST" class="lg:min-h-[490px] max-w-[800px] relative mx-auto p-8 lg:p-16 border border-black dark:border-white bg-white/50 dark:bg-black dark:bg-white/5">
 				<div class="flex flex-col md:flex-row min-w-full -mx-3 mb-4">
 						<div class="px-3 flex-1">
-								<label for="name" class="block mb-2 text-xl">What is Your Name?*</label>
+								<label for="name" class="block mb-2 text-xl">What is your name?*</label>
 								<input id="name" placeholder="e.g. Guy Fieri"  name="name" required="required" class="border border-black dark:border-white bg-white/50 dark:bg-white/5 focus:bg-white dark:focus:bg-white/10 block w-full outline-none mb-2 px-4 py-3 ">
 						</div>
 				
@@ -54,7 +54,7 @@
 				</div>   
 				<div class="w-full mb-6"><label for="message"
 						class="block text-xl mb-2">To what do I owe the pleasure?*</label><textarea id="message" rows="4"
-						name="message" placeholder="e.g. Dear James, I will pay you one billion dollars for a website..." required="required"
+						name="message" placeholder="e.g. Knock knock. Who's there? Irma. Irma who? Irma gerd I like your website!" required="required"
 						class="border-black dark:border-white border block w-full bg-white/50 dark:bg-white/5 focus:bg-white dark:focus:bg-white/10 outline-none appearance-none mb-2 px-4 py-3"></textarea>
 				</div>
 	
