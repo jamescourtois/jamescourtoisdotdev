@@ -22,10 +22,10 @@
 			</ul>
 	</div>
 </div>
-<div id="samples" class="scroll-m-16 relative z-[99]">
-	<h2 class="my-4 text-4xl lg:text-5xl text-center max-w-[800px] mx-auto">Here are <span class="font-extrabold">{{$projects->count()}} examples</span> of sites I've built that are still humming along.</h2>
+<div id="samples" class="scroll-m-16 relative z-[99] px-4">
+	<h2 class="my-4 text-4xl lg:text-5xl text-center max-w-[800px] px-4 mx-auto">Here are <span class="font-extrabold">{{$projects->count()}} examples</span> of sites I've built that are still humming along.</h2>
 	<p class="text-center px-4 block text-gray-500 mb-16">(<span class="hidden lg:inline">Click</span><span class="lg:hidden">Tap</span> one to launch a new tab.)</p>
-	<ul class="list-none grid grid-cols-1 gap-4 px-4 md:grid-cols-2 lg:grid-cols-3 pb-8">
+	<ul class="list-none grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 pb-8">
 		@foreach ($projects as $project)
 			<li class="group relative col-span-1 text-center flex flex-col items-center justify-center border border-black dark:border-white hover:bg-white duration-150 overflow-hidden">
 				<img class="block w-full h-auto group-hover:scale-110 duration-150 overflow-hidden" src="assets/images/{{$project->image}}" alt="Screenshot of {{$project->title}}">
