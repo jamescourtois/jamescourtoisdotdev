@@ -61,7 +61,7 @@
 				<div class="flex w-full"><button type="submit" class="inline-block mt-2 text-xl cursor-pointer font-extrabold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-6 py-3"><span>Submit</span></button></div>
 		</form>
 </div>
-<div class="circles absolute inset-0 h-full w-screen max-w-screen overflow-hidden">
+<div class="hidden lg:block circles absolute inset-0 h-full w-screen max-w-screen overflow-hidden">
 	<div class="circle"></div>
 	<div class="circle"></div>
 	<div class="circle"></div>
