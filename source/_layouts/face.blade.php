@@ -50,19 +50,4 @@
             <span class="fill"></span>
         </div>
     </div>
-
-<div class="circles">
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-</div>
-
-
 </div>

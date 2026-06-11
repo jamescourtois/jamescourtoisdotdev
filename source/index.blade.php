@@ -37,7 +37,6 @@
 		@endforeach
 	</ul>
 </div>
-
 <div class="py-16 px-4 lg:pb-24 relative z-[99]">
 		<h2 id="contact" class="scroll-m-8 my-4 text-4xl lg:text-5xl text-center max-w-[800px] mx-auto mb-12 font-semibold">You probably already know how to contact me. If not, reach out below.</h2>
 		<form id="contact-form" action="https://api.form-data.com/f/JFPRHf1ZOogCA1" method="POST" class="lg:min-h-[490px] max-w-[800px] relative mx-auto p-8 lg:p-16 border border-black dark:border-white bg-white/50 dark:bg-black dark:bg-white/5">
@@ -61,5 +60,17 @@
 	
 				<div class="flex w-full"><button type="submit" class="inline-block mt-2 text-xl cursor-pointer font-extrabold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-6 py-3"><span>Submit</span></button></div>
 		</form>
+</div>
+<div class="circles absolute inset-0 h-full w-screen max-w-screen overflow-hidden">
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
 </div>
 @endsection

@@ -12,7 +12,7 @@
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
 				
     </head>
-    <body class="colours text-black/75 dark:text-white/75 font-sans antialiased max-w-screen overflow-x-hidden">
+    <body class="colours text-black/75 dark:text-white/75 font-sans antialiased relative">
         @yield('body')
     </body>
 </html>
