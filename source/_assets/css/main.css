@@ -8,6 +8,73 @@
 	scroll-behavior: smooth;
 }
 
+.colours {
+	animation: colour-change 60s linear infinite;
+}
+
+.circle {
+	position: absolute;
+	top: 40px;
+	left: calc(50% - 60px);
+	width: 120px;
+	height: 120px;
+	border-radius: 9999px;
+	background-color: white;
+	opacity: 0.1;
+	z-index: -1;
+	animation: hypnotize 30s linear infinite;	
+}
+
+@media (prefers-color-scheme:dark){
+	.colours {
+		animation: colour-change-dark 60s linear infinite;
+	}	
+	.circle {
+		background-color: black;
+	}
+}
+
+
+
+.circle:nth-child(2){
+	animation-delay: 3s;
+}
+
+.circle:nth-child(3){
+	animation-delay: 6s;
+}
+
+.circle:nth-child(4){
+	animation-delay: 9s;
+}
+
+.circle:nth-child(5){
+	animation-delay: 12s;
+}
+
+.circle:nth-child(6){
+	animation-delay: 15s;
+}
+
+.circle:nth-child(7){
+	animation-delay: 18s;
+}
+
+.circle:nth-child(8){
+	animation-delay: 21s;
+}
+
+.circle:nth-child(9){
+	animation-delay: 24s;
+}
+
+.circle:nth-child(10){
+	animation-delay: 27s;
+}
+
+
+
+
 
 .jamesface {
     @apply relative mx-auto flex flex-col items-stretch justify-start z-30;
@@ -312,4 +379,34 @@
     12%  { transform: scaleY(0); }
     15%  { transform: scaleY(1); }
     100% { transform: scaleY(1); }
+}
+
+@keyframes colour-change {
+    0%   { background-color: oklch(90.5% 0.093 164.15); }
+   
+    25%  { background-color: oklch(90.1% 0.058 230.902); }
+  
+		50%  { background-color: oklch(89.4% 0.057 293.283); }
+		
+		75%  { background-color: oklch(90.1% 0.058 230.902); }
+  
+    100% { background-color: oklch(90.5% 0.093 164.15); }
+}
+
+
+@keyframes colour-change-dark {
+    0%   { background-color: oklch(20.8% 0.042 265.755); }
+   
+    25%  { background-color: oklch(20.8% 0.042 265.755); }
+  
+		50%  { background-color: oklch(27.9% 0.041 260.031); }
+		
+		75%  { background-color: oklch(20.8% 0.042 265.755); }
+  
+    100% { background-color: oklch(20.8% 0.042 265.755); }
+}
+
+@keyframes hypnotize {
+	0% { transform: scale(1);opacity:0.1; }
+	100% { transform: scale(20);opacity:0; }
 }
