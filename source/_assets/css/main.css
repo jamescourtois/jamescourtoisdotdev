@@ -1,0 +1,314 @@
+@import "tailwindcss";
+
+* {
+	/* @apply m-0 p-0; */
+	font-family: "Gabarito", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	scroll-behavior: smooth;
+}
+
+
+.jamesface {
+    @apply relative mx-auto flex flex-col items-stretch justify-start z-30;
+    height: 220px;
+		width: 150px;
+
+
+    .hair {
+        @apply absolute z-40 top-0;
+        height: 28%;
+        width: 96%;
+        left: 2%;
+				top: 3%;
+
+        .top {
+            @apply absolute z-40 overflow-hidden;
+            width: 98%;
+            height: 96%;
+            left: 1%;
+
+            .fill {
+                @apply block absolute h-full w-full;
+                background: #704c2f;
+								height: 174%;
+                border-radius: 50%;
+            }
+        }
+
+        .right {
+            @apply absolute right-0 rounded-full z-40;
+            width: 8%;
+            height: 103%;
+            background: #704c2f;
+            top: 78%;
+            right: 1%;
+        }
+
+        .left {
+            @apply absolute right-0 rounded-full z-40;
+            width: 8%;
+            height: 103%;
+            background: #704c2f;
+            top: 78%;
+            left: 1%;
+        }
+
+        .skin {
+            @apply absolute block rounded-full z-50;
+            background: #FDD7C5;
+            width: 42%;
+            height: 62%;
+            top: 69%;
+            left: 49%;
+						
+        }
+
+        .curl {
+            @apply absolute block z-50;
+            width: 45%;
+            height: 40%;
+            left: 5%;
+            top: 66%;
+
+            &::before {
+                content: '';
+                @apply block absolute w-full h-full rounded-full bottom-0 z-10;
+                background: #704c2f;
+            }
+
+            &::after {
+                content: '';
+                @apply block absolute w-full rounded-full h-full z-0;
+                background: #56402f;
+                bottom: -4%;
+            }
+        }
+    }
+
+    .ear {
+        @apply absolute z-40;
+        background: #FDD7C5;
+        width: 8%;
+        height: 25%;
+        top: 41%;
+
+        &.left {
+            left: 3px;
+		        border-radius: 25% 55% 40% 40%;
+            transform: rotate(-5deg);
+						
+        }
+
+        &.right {
+            right: 3px;
+		        border-radius: 55% 25% 40% 40%;
+            transform: rotate(5deg);
+						
+        }
+    }
+
+    .head {
+        @apply z-10 absolute;
+        height: 89%;
+        top: 4%;
+        width: 82%;
+        left: 9%;
+        border-radius: 40%;
+        background: #FDD7C5;
+        animation: swallow 12s linear 3s infinite;
+				
+    }
+
+    .eye {
+        @apply z-50 absolute block overflow-hidden bg-white;
+        width: 20%;
+        height: 6.25%;
+        border-radius: 50%;
+        top: 46%;
+        animation: blink 4s ease 1s infinite;
+
+        &.left {
+            left: 21.5%;
+        }
+
+        &.right {
+            left: 58%;
+        }
+    }
+
+    .eyebrow {
+        @apply absolute block z-50;
+        height: 2.5%;
+        width: 23%;
+        background-color: #704c2f;
+
+        &.left {
+            left: 20.5%;
+            top: 41.5%;
+            transform: rotate(-1deg);
+						border-radius: 70% 50% 0 0;
+            animation: left-brow 7s linear 4s infinite;
+        }
+
+        &.right {
+            left: 57%;
+            top: 42%;
+            transform: rotate(1.5deg);
+						border-radius: 50% 70% 0 0;
+            animation: right-brow 7s linear 4s infinite;
+        }
+    }
+
+    .iris {
+        @apply block absolute rounded-full mx-auto z-30;
+        background: rgb(59, 99, 157);
+        background: linear-gradient(0deg, rgba(59, 99, 157, 1) 50%, rgba(53, 183, 221, 1) 100%);
+        width: 50%;
+        height: 120%;
+        top: -10%;
+        left: 25%;
+    }
+
+    .pupil {
+        @apply absolute rounded-full z-50 block mx-auto bg-black;
+        width: 20%;
+        height: 50%;
+        top: 25%;
+        left: 41%;
+
+        &::after {
+            content: '';
+            @apply block absolute rounded-full w-1/2;
+            background: rgba(255, 255, 255, 0.85);
+            height: 50%;
+            top: -1%;
+            left: -1%;
+        }
+    }
+
+    .nose {
+        @apply absolute z-50;
+				top: 44%;
+        left: 44%;
+        height: 22%;
+        width: 12%;
+    }
+
+    .nostrils {
+        @apply block absolute bottom-0 w-full;
+        height: 40%;
+        bottom: -10%;
+        width: 149%;
+        left: -23%;
+        background: #F2BEA5;
+        border-radius: 60% 60% 25% 25%;
+				background: linear-gradient(0deg, #d59c80 0%, #f2bea4 23%);
+    }
+
+    .bridge {
+        @apply absolute h-full z-40 rounded-br-full rounded-bl-full;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+        background: #FDD7C5;
+        /* background: linear-gradient(to bottom, #FDD7C5 0%, #fccdb8 100%); */
+    }
+
+    .bridge-outer {
+        @apply absolute w-full h-full z-30 rounded-br-full rounded-bl-full;
+        background: #f2bea5;
+        background: linear-gradient(to bottom, #FDD7C5 0%, #f2bea5 25%, #f2bea5 100%);
+    }
+
+    .mouth {
+        @apply overflow-hidden relative flex flex-col justify-start items-stretch absolute z-50;
+        top: 72%;
+        width: 35%;
+        height: 8%;
+        left: 32.5%;
+        animation: close-mouth 12s linear 3s infinite;
+
+        .top-lip {
+            @apply absolute overflow-hidden top-0 left-0 right-0 w-full z-40;
+            height: 27.5%;
+
+            .fill {
+                @apply block w-full absolute left-0 right-0;
+                background: #c46f69;
+                height: 200%;
+                bottom: -100%;
+                border-radius: 50%;
+            }
+        }
+
+        .mouth-inner {
+            @apply absolute left-0 right-0 block overflow-hidden z-30 w-full bg-gray-100;
+            height: 45%;
+            top: 5%;
+            border-radius: 50%;
+            animation: close-mouth-inner 12s linear 3s infinite;
+        }
+
+        .bottom-lip {
+            @apply absolute overflow-hidden w-full left-0 right-0 z-20;
+            height: 72.5%;
+            top: 27.5%;
+
+            .fill {
+                @apply block w-full absolute left-0 right-0;
+                background: #dd7e77;
+                height: 200%;
+                top: -100%;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+@keyframes swallow {
+    0%   { transform: scaleY(1); }
+    4%   { transform: scaleY(0.979); }
+    12%  { transform: scaleY(0.979); }
+    15%  { transform: scaleY(1); }
+    100% { transform: scaleY(1); }
+}
+
+@keyframes blink {
+    0%   { transform: scaleY(1); }
+    2%   { transform: scaleY(0); }
+    4%   { transform: scaleY(1); }
+    100% { transform: scaleY(1); }
+}
+
+@keyframes left-brow {
+    0%   { transform: rotate(-1deg) translateY(0); }
+    2%   { transform: rotate(-4deg) translateY(-34.5%); }
+    44%  { transform: rotate(-4deg) translateY(-34.5%); }
+    46%  { transform: rotate(-1deg) translateY(0); }
+    100% { transform: rotate(-1deg) translateY(0); }
+}
+
+@keyframes right-brow {
+    0%   { transform: rotate(1.5deg) translateY(0); }
+    2%   { transform: rotate(2.5deg)   translateY(-34%); }
+    44%  { transform: rotate(2.5deg)   translateY(-34%); }
+    46%  { transform: rotate(1.5deg) translateY(0); }
+    100% { transform: rotate(1.5deg) translateY(0); }
+}
+
+@keyframes close-mouth {
+    0%   { transform: scaleY(1) scaleX(1) translateX(0); }
+    4%   { transform: scaleY(0.75) scaleX(0.857) translateX(0); }
+    12%  { transform: scaleY(0.75) scaleX(0.857) translateX(0); }
+    15%  { transform: scaleY(1) scaleX(1) translateX(0); }
+    100% { transform: scaleY(1) scaleX(1) translateX(0); }
+}
+
+@keyframes close-mouth-inner {
+    0%   { transform: scaleY(1); }
+    4%   { transform: scaleY(0); }
+    12%  { transform: scaleY(0); }
+    15%  { transform: scaleY(1); }
+    100% { transform: scaleY(1); }
+}
