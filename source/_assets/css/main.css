@@ -13,6 +13,7 @@
     @apply relative mx-auto flex flex-col items-stretch justify-start z-30;
     height: 220px;
 		width: 150px;
+		min-height: 220px;
 
 
     .hair {
