@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="{{ vite('source/_assets/css/main.css') }}">
 				<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
+				<link rel="icon" type="image/png" href="/favicon.png">
 				
     </head>
     <body class="colours text-black/75 dark:text-white/75 font-sans antialiased relative">
