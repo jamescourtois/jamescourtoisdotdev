@@ -76,7 +76,7 @@
 
 
 
-.jamesface {
+.face {
     @apply relative mx-auto flex flex-col items-stretch justify-start z-30;
     height: 220px;
 		width: 150px;
@@ -194,7 +194,7 @@
         height: 6.25%;
         border-radius: 50%;
         top: 46%;
-        animation: blink 4s ease 1s infinite;
+        animation: blink 7s ease-out  0s infinite;
 
         &.left {
             left: 21.5%;
@@ -216,7 +216,7 @@
             top: 41.5%;
             transform: rotate(-1deg);
 						border-radius: 70% 50% 0 0;
-            animation: left-brow 7s linear 4s infinite;
+            animation: left-brow 13s linear 1.5s infinite;
         }
 
         &.right {
@@ -224,31 +224,32 @@
             top: 42%;
             transform: rotate(1.5deg);
 						border-radius: 50% 70% 0 0;
-            animation: right-brow 7s linear 4s infinite;
+            animation: right-brow 13s linear 1.5s infinite;
         }
     }
 
     .iris {
         @apply block absolute rounded-full mx-auto z-30;
         background: rgb(59, 99, 157);
-        background: linear-gradient(0deg, rgba(59, 99, 157, 1) 50%, rgba(53, 183, 221, 1) 100%);
+        background: linear-gradient(0deg, rgb(47, 83, 137) 0%, rgb(47, 83, 137) 30%, rgba(53, 183, 221, 1) 80%);
         width: 50%;
-        height: 120%;
+        height: 109%;
         top: -10%;
         left: 25%;
+				animation: break-eye-contact 17s linear 3s infinite;
     }
 
     .pupil {
         @apply absolute rounded-full z-50 block mx-auto bg-black;
-        width: 20%;
+        width: 50%;
         height: 50%;
         top: 25%;
-        left: 41%;
+        left: 25%;
 
         &::after {
             content: '';
             @apply block absolute rounded-full w-1/2;
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.70);
             height: 50%;
             top: -1%;
             left: -1%;
@@ -295,7 +296,7 @@
         width: 35%;
         height: 8%;
         left: 32.5%;
-        animation: close-mouth 12s linear 3s infinite;
+        animation: close-mouth 19s linear 2s infinite;
 
         .top-lip {
             @apply absolute overflow-hidden top-0 left-0 right-0 w-full z-40;
@@ -310,12 +311,12 @@
             }
         }
 
-        .mouth-inner {
+        .teeth {
             @apply absolute left-0 right-0 block overflow-hidden z-30 w-full bg-gray-100;
             height: 45%;
             top: 5%;
             border-radius: 50%;
-            animation: close-mouth-inner 12s linear 3s infinite;
+            animation: close-mouth-inner 19s linear 2s infinite;
         }
 
         .bottom-lip {
@@ -332,6 +333,39 @@
             }
         }
     }
+}
+
+@keyframes break-eye-contact {
+	0% {
+		transform: translate(0,0);
+	}
+	7% {
+		transform: translate(0,0);
+	}
+	9% {
+		transform: translate(-5%,4%);
+	}
+	12% {
+		transform: translate(-5%,4%);
+	}
+	14% {
+		transform: translate(0,0);
+	}
+	57% {
+		transform: translate(0,0);
+	}
+	59% {
+		transform: translate(12%,2%);
+	}
+	60% {
+		transform: translate(12%,2%);
+	}
+	61% {
+		transform: translate(0,0);
+	}
+	100% {
+		transform: translate(0,0)
+	}
 }
 
 @keyframes swallow {
@@ -351,17 +385,17 @@
 
 @keyframes left-brow {
     0%   { transform: rotate(-1deg) translateY(0); }
-    2%   { transform: rotate(-4deg) translateY(-34.5%); }
-    44%  { transform: rotate(-4deg) translateY(-34.5%); }
-    46%  { transform: rotate(-1deg) translateY(0); }
+    2%   { transform: rotate(-4deg) translateY(-39.5%); }
+    44%  { transform: rotate(-4deg) translateY(-39.5%); }
+    48%  { transform: rotate(-1deg) translateY(0); }
     100% { transform: rotate(-1deg) translateY(0); }
 }
 
 @keyframes right-brow {
     0%   { transform: rotate(1.5deg) translateY(0); }
-    2%   { transform: rotate(2.5deg)   translateY(-34%); }
-    44%  { transform: rotate(2.5deg)   translateY(-34%); }
-    46%  { transform: rotate(1.5deg) translateY(0); }
+    2%   { transform: rotate(2.5deg) translateY(-39%); }
+    44%  { transform: rotate(2.5deg) translateY(-39%); }
+    48%  { transform: rotate(1.5deg) translateY(0); }
     100% { transform: rotate(1.5deg) translateY(0); }
 }
 
