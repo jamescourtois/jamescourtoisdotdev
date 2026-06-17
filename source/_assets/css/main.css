@@ -321,7 +321,7 @@
 
         .bottom-lip {
             @apply absolute overflow-hidden w-full left-0 right-0 z-20;
-            height: 65%;
+            height: 60%;
             top: 27.5%;
 
             .fill {
@@ -355,10 +355,10 @@
 		transform: translate(0,0);
 	}
 	59% {
-		transform: translate(12%,-1%);
+		transform: translate(7%,1%);
 	}
 	60% {
-		transform: translate(12%,2%);
+		transform: translate(7%,1%);
 	}
 	61% {
 		transform: translate(0,0);
@@ -370,9 +370,9 @@
 
 @keyframes swallow {
     0%   { transform: scaleY(1); }
-    4%   { transform: scaleY(0.96); }
+    2%   { transform: scaleY(0.96); }
     12%  { transform: scaleY(0.96); }
-    15%  { transform: scaleY(1); }
+    14%  { transform: scaleY(1); }
     100% { transform: scaleY(1); }
 }
 
@@ -401,17 +401,17 @@
 
 @keyframes close-mouth {
     0%   { transform: scaleY(1) scaleX(1) translateX(0); }
-    4%   { transform: scaleY(0.65) scaleX(0.857) translateX(0); }
-    12%  { transform: scaleY(0.65) scaleX(0.857) translateX(0); }
-    15%  { transform: scaleY(1) scaleX(1) translateX(0); }
+    1.5%   { transform: scaleY(0.7) scaleX(0.857) translateX(0); }
+    12%  { transform: scaleY(0.7) scaleX(0.857) translateX(0); }
+    14%  { transform: scaleY(1) scaleX(1) translateX(0); }
     100% { transform: scaleY(1) scaleX(1) translateX(0); }
 }
 
 @keyframes close-mouth-inner {
     0%   { transform: scaleY(1); }
-    4%   { transform: scaleY(0); }
+    1.5%   { transform: scaleY(0); }
     12%  { transform: scaleY(0); }
-    15%  { transform: scaleY(1); }
+    14%  { transform: scaleY(1); }
     100% { transform: scaleY(1); }
 }
 
