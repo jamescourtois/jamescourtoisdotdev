@@ -1,5 +1,4 @@
 <div class="face {{ $class ?? '' }}" title="I drew and animated my face using html and css.">
-	<a href="/" class="absolute inset-0 z-[999]"><span class="sr-only">Go Home</span></a>
     <div class="hair">
         <div class="top">
             <span class="fill"></span>
