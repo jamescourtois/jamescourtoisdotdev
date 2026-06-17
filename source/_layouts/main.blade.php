@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <meta name="description" content="{{ $page->description }}">
+				<meta property="og:title" content="James Courtois - Full Stack Web Developer in St. Louis, MO">
+				<meta property="og:description" content="10 years of experience in WordPress and Full Stack PHP web development. 15 total years in the creative digital space.">
+				<meta property="og:image" content="{{ $page->baseUrl }}/assets/images/jamescourtoisdotdev.png">
+				<meta property="og:url" content="https://jamescourtois.dev">
+				<meta property="og:type" content="website">
         <title>{{ $page->title }}</title>
         @viteRefresh()
         <link rel="stylesheet" href="{{ vite('source/_assets/css/main.css') }}">
