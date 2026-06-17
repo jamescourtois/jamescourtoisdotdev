@@ -28,12 +28,12 @@
 	<p class="text-center px-4 block text-gray-500 mb-16">(<span class="hidden lg:inline">Click</span><span class="lg:hidden">Tap</span> one to launch a new tab.)</p>
 	<ul class="list-none grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 pb-8">
 		@foreach ($projects as $project)
-			<li class="group relative col-span-1 text-center flex flex-col items-center justify-center border border-black dark:border-white hover:bg-white duration-150 overflow-hidden">
+			<li class="group relative col-span-1 text-center flex flex-col items-center justify-center border border-black/75 duration-150 overflow-hidden">
 				<img class="block w-full h-auto group-hover:scale-110 duration-150 overflow-hidden" src="assets/images/{{$project->image}}" alt="Screenshot of {{$project->title}}">
 				<a target="_blank" class="absolute inset-0 z-10" href="{{ $project->url }}">
 					<span class="sr-only">View {{ $project->title }}</span>
 				</a>
-				<span class="font-bold text-xl lg:text-2xl block p-2 absolute bottom-0 left-0 w-full bg-white/40 backdrop-blur group-hover:bg-white duration-300 text-black">{{ $project->title }}</span>
+				<span class="font-bold text-xl lg:text-2xl block p-2 absolute bottom-0 left-0 w-full bg-white/40 dark:bg-black/50 backdrop-blur group-hover:bg-white dark:text-white group-hover:dark:bg-black duration-300 text-black">{{ $project->title }}</span>
 			</li>
 		@endforeach
 	</ul>
@@ -62,23 +62,23 @@
 
 <div class="my-16 lg:my-24 px-4 relative z-[99]">
 		<h2 id="contact" class="scroll-m-8 my-4 text-4xl lg:text-5xl text-center max-w-[800px] mx-auto mb-12 font-semibold">You probably already know how to contact me. If not, reach out below.</h2>
-		<form id="contact-form" action="https://api.form-data.com/f/JFPRHf1ZOogCA1" method="POST" class="lg:min-h-[490px] max-w-[800px] relative mx-auto p-8 lg:p-16 border border-black dark:border-white bg-white/50 dark:bg-black dark:bg-white/5">
+		<form id="contact-form" action="https://api.form-data.com/f/JFPRHf1ZOogCA1" method="POST" class="lg:min-h-[490px] max-w-[800px] relative mx-auto p-8 lg:p-16 bg-white/50 dark:bg-black dark:bg-white/5">
 				<div class="flex flex-col md:flex-row min-w-full -mx-3 mb-4">
 						<div class="px-3 flex-1">
 								<label for="name" class="block mb-2 text-xl">What is your name?*</label>
-								<input id="name" placeholder="e.g. Guy Fieri"  name="name" required="required" class="border border-black dark:border-white bg-white/50 dark:bg-white/5 focus:bg-white dark:focus:bg-white/10 block w-full outline-none mb-2 px-4 py-3 ">
+								<input id="name" placeholder="e.g. Guy Fieri"  name="name" required="required" class=" bg-white/50 dark:bg-white/5 focus:bg-white dark:focus:bg-white/10 block w-full outline-none mb-2 px-4 py-3 ">
 						</div>
 				
 						<div class="px-3 flex-1">
 								<label for="email" class="block text-xl mb-2">What is your email address?*</label>
-								<input type="email" id="email" placeholder="e.g. welcome@flavortown.com" name="email" required="required" class="border border-black bg-white/50 dark:bg-white/5 focus:bg-white dark:focus:bg-white/10 dark:border-white block w-full outline-none mb-2 px-4 py-3 ">
+								<input type="email" id="email" placeholder="e.g. welcome@flavortown.com" name="email" required="required" class="bg-white/50 dark:bg-white/5 focus:bg-white dark:focus:bg-white/10 block w-full outline-none mb-2 px-4 py-3 ">
 						</div>
 		
 				</div>   
 				<div class="w-full mb-6"><label for="message"
 						class="block text-xl mb-2">To what do I owe the pleasure?*</label><textarea id="message" rows="4"
 						name="message" placeholder="e.g. Knock knock. Who's there? Irma. Irma who? Irma gerd I like your website!" required="required"
-						class="border-black dark:border-white border block w-full bg-white/50 dark:bg-white/5 focus:bg-white dark:focus:bg-white/10 outline-none appearance-none mb-2 px-4 py-3"></textarea>
+						class="block w-full bg-white/50 dark:bg-white/5 focus:bg-white dark:focus:bg-white/10 outline-none appearance-none mb-2 px-4 py-3"></textarea>
 				</div>
 	
 				<div class="flex w-full"><button type="submit" class="inline-block mt-2 text-xl cursor-pointer font-extrabold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-6 py-3"><span>Submit</span></button></div>
