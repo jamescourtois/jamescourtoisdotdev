@@ -17,9 +17,9 @@
 				</li>
 			</ul>
 			<ul class="list-none flex gap-4 my-4 items-center justify-center">
-				<li><a href="#samples" class="min-w-[120px] inline-block mt-2 text-xl cursor-pointer font-extrabold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-6 py-3">Websites</a></li>
-				<li><a href="#about" class="min-w-[120px] inline-block mt-2 text-xl cursor-pointer font-extrabold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-6 py-3">About</a></li>
-				<li><a href="#contact" class="min-w-[120px] inline-block mt-2 text-xl cursor-pointer font-extrabold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-6 py-3">Contact</a></li>
+				<li><a href="#samples" class="min-w-[120px] inline-block mt-2 text-lg cursor-pointer font-semibold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-4 py-2">Websites</a></li>
+				<li><a href="#about" class="min-w-[120px] inline-block mt-2 text-lg cursor-pointer font-semibold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-4 py-2">About</a></li>
+				<li><a href="#contact" class="min-w-[120px] inline-block mt-2 text-lg cursor-pointer font-semibold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-4 py-2">Contact</a></li>
 			</ul>
 	</div>
 </div>
