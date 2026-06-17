@@ -236,7 +236,7 @@
         height: 109%;
         top: -10%;
         left: 25%;
-				animation: break-eye-contact 17s linear 3s infinite;
+				animation: break-eye-contact 17s linear 5s infinite;
     }
 
     .pupil {
@@ -355,10 +355,10 @@
 		transform: translate(0,0);
 	}
 	59% {
-		transform: translate(7%,1%);
+		transform: translate(6%,3%);
 	}
 	60% {
-		transform: translate(7%,1%);
+		transform: translate(6%,3%);
 	}
 	61% {
 		transform: translate(0,0);
