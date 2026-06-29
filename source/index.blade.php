@@ -2,25 +2,27 @@
 
 @section('body')
 
-<div class="w-full min-h-dvh flex flex-col items-center justify-center">
+<div class="relative w-full min-h-dvh flex flex-col items-center justify-center">
 	
-	@include('_layouts.face', ['class' => 'lg:scale-120 lg:mb-8'])
+	@include('_layouts.face', ['class' => 'z-[9]'])
 	<div class="p-4 mx-auto text-center w-full relative z-[99]">
-			<h1 class="text-4xl lg:text-6xl font-extrabold">James Courtois</h1>
-			<ul class="text-xl list-none flex flex-col gap-2 my-4 font-semibold">
-				<li>Full Stack Web Developer</li>
-				<li>
-					<svg class="fill-current size-[0.95rem] translate-y-[-2px] inline-block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-						<path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"></path>
-					</svg>
-					Based in St. Louis, MO
-				</li>
-			</ul>
-			<ul class="list-none flex gap-4 my-4 items-center justify-center">
-				<li><a href="#samples" class="min-w-[100px] inline-block mt-2 text-lg cursor-pointer font-semibold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-4 py-2">Websites</a></li>
-				<li><a href="#about" class="min-w-[100px] inline-block mt-2 text-lg cursor-pointer font-semibold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-4 py-2">About</a></li>
-				<li><a href="#contact" class="min-w-[100px] inline-block mt-2 text-lg cursor-pointer font-semibold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-4 py-2">Contact</a></li>
-			</ul>
+			<div class="relative z-[99]">
+				<h1 class="text-4xl lg:text-6xl font-extrabold">James Courtois</h1>
+				<ul class="text-xl list-none flex flex-col gap-2 my-4 font-semibold">
+					<li>Full Stack Web Developer</li>
+					<li>
+						<svg class="fill-current size-[0.95rem] translate-y-[-2px] inline-block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+							<path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"></path>
+						</svg>
+						Based in St. Louis, MO
+					</li>
+				</ul>
+				<ul class="list-none flex gap-4 my-4 items-center justify-center">
+					<li><a href="#samples" class="min-w-[100px] inline-block mt-2 text-lg cursor-pointer font-semibold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-4 py-2">Websites</a></li>
+					<li><a href="#about" class="min-w-[100px] inline-block mt-2 text-lg cursor-pointer font-semibold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-4 py-2">About</a></li>
+					<li><a href="#contact" class="min-w-[100px] inline-block mt-2 text-lg cursor-pointer font-semibold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-4 py-2">Contact</a></li>
+				</ul>
+			</div>
 	</div>
 </div>
 <div id="samples" class="scroll-m-16 relative z-[99] px-4 mb-16 lg:mb-24">
@@ -83,17 +85,5 @@
 	
 				<div class="flex w-full"><button type="submit" class="inline-block mt-2 text-xl cursor-pointer font-extrabold rounded-full duration-150 bg-black/75 hover:bg-black dark:bg-white/75 dark:hover:bg-white text-white dark:text-black px-6 py-3"><span>Submit</span></button></div>
 		</form>
-</div>
-<div class="hidden lg:block circles absolute inset-0 h-full w-screen max-w-screen overflow-hidden z-[-1]">
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
-	<div class="circle"></div>
 </div>
 @endsection
