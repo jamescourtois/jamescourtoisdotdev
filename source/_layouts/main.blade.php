@@ -18,7 +18,7 @@
 				<link rel="icon" type="image/png" href="/favicon.png">
 				
     </head>
-    <body class="colours text-black/75 dark:text-white/75 font-sans antialiased relative">
+    <body class="colours text-black/75 max-w-screen overflow-hidden dark:text-white/75 font-sans antialiased relative">
         @yield('body')
     </body>
 </html>
