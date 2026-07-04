@@ -39,7 +39,7 @@
             <span class="fill"></span>
         </div>
     </div>
-		<div>
+		<div class="hidden lg:block">
 			<div class="circle"></div>
 			<div class="circle"></div>
 			<div class="circle"></div>
