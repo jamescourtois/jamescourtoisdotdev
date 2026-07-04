@@ -10,6 +10,7 @@
 
 .colours {
 	animation: colour-change 60s linear infinite;
+	background-color: oklch(90.5% 0.093 164.15);
 }
 
 .circle {
@@ -29,8 +30,8 @@
 	.circle {
 		display: none;
 	}
-	.colours {
-		animation: ;
+	* {
+		animation: none !important;
 	}
 }
 
@@ -40,6 +41,9 @@
 	}	
 	.circle {
 		background-color: black;
+	}
+	.colours{
+		background-color: oklch(26.3% 0.024 320.12);
 	}
 }
 
