@@ -31,7 +31,7 @@
 	<ul class="list-none grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 pb-8">
 		@foreach ($projects as $project)
 			<li class="group relative col-span-1 text-center flex flex-col items-center justify-center border border-black/75 duration-150 overflow-hidden">
-				<img class="block w-full h-auto group-hover:scale-110 duration-150 overflow-hidden" src="assets/images/{{$project->image}}" alt="Screenshot of {{$project->title}}">
+				<img class="block w-full h-auto group-hover:scale-110 duration-150 overflow-hidden"  srcset="assets/images/{{$project->image}}.webp 1200w, assets/images/{{$project->image}}_mobile.webp 600w" src="assets/images/{{$project->image}}" loading="lazy" decoding="async" alt="Screenshot of {{$project->title}}">
 				<a target="_blank" class="absolute inset-0 z-10" href="{{ $project->url }}">
 					<span class="sr-only">View {{ $project->title }}</span>
 				</a>
@@ -45,20 +45,20 @@
 	<h2 class="block text-center text-4xl lg:text-5xl mb-8 font-semibold max-w-[800px] mx-auto">I love coding with open source community-driven tech.</h2>
 	<p class="max-w-[800px] mx-auto mb-12">My 10 years of web development experience are built on top of 5 years of designing for digital brands. You will see a lot of WordPress sites listed above as I have shipped countless custom WP themes and plugins. I love the Laravel ecosystem for both full stack apps and static sites (like this one). I never shy away from complex CSS animations and new JavaScript frameworks. When I want to unplug, you can find me outside with my dog, at home cooking new recipes, or shooting a few games of pool.</p>
 	<ul class="list-none flex flex-wrap items-center justify-center gap-x-16 gap-y-2 w-full max-w-[1024px] mx-auto bg-white/75 p-8">
-		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-2" src="/assets/images/new-php-logo.svg" title="PHP" alt="PHP Logo"></li>
-		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0" src="/assets/images/laravel-logolockup-rgb-laravel_black.svg" title="Laravel" alt="Laravel Logo"></li>
-		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-4" src="/assets/images/Ruby_On_Rails_Logo.svg" title="Ruby on Rails" alt="Ruby on Rails Logo"></li>
-		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-2" src="/assets/images/logo-mysql.svg" title="MySQL" alt="MySQL Logo"></li>
-		<li class="flex relative h-[70px] min-h-[80px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-1" src="/assets/images/composer.svg" title="Composer" alt="Composer Logo"></li>
-		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-2" src="/assets/images/nodejsDark.svg" title="Node.js" alt="Node.js Logo"></li>
-		<li class="flex relative h-[60px] min-h-[60px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-3" src="/assets/images/Git-Logo-2Color.svg" title="Git" alt="Git Logo"></li>
-		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[100px] block m-0 " src="/assets/images/vite.svg" title="Vite" alt="Vite Logo"></li>
-		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[160px] block m-0 py-3" src="/assets/images/Vue.js.svg" title="Vue.js" alt="Vue.js Logo"></li>
-		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[160px] block m-0" src="/assets/images/alpine_long.svg" title="Alpine.js" alt="Alpine.js Logo"></li>
-		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0" src="/assets/images/tailwindcss-logotype.svg" title="Tailwind CSS" alt="TailwindCSS Logo"></li>
-		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0" src="/assets/images/WordPress-logotype-standard.svg" title="WordPress" alt="WordPress Logo"></li>
-		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[120px] block m-0" src="/assets/images/shopify_logo_whitebg.svg" title="Shopify" alt="Shopify Logo"></li>
-		<li title="Jigsaw by Tighten" class="flex gap-1 items-center justify-center uppercase font-semibold text-black cursor-default"><img class="h-[25px] w-auto block m-0" src="/assets/images/jigsaw-logo.svg" alt="Jigsaw Logo"><span>Jigsaw</span></li>
+		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-2"  loading="lazy" decoding="async" src="/assets/images/new-php-logo.svg" title="PHP" alt="PHP Logo"></li>
+		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0"  loading="lazy" decoding="async" src="/assets/images/laravel-logolockup-rgb-laravel_black.svg" title="Laravel" alt="Laravel Logo"></li>
+		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-4"  loading="lazy" decoding="async" src="/assets/images/Ruby_On_Rails_Logo.svg" title="Ruby on Rails" alt="Ruby on Rails Logo"></li>
+		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-2"  loading="lazy" decoding="async" src="/assets/images/logo-mysql.svg" title="MySQL" alt="MySQL Logo"></li>
+		<li class="flex relative h-[70px] min-h-[80px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-1"  loading="lazy" decoding="async" src="/assets/images/composer.svg" title="Composer" alt="Composer Logo"></li>
+		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-2"  loading="lazy" decoding="async" src="/assets/images/nodejsDark.svg" title="Node.js" alt="Node.js Logo"></li>
+		<li class="flex relative h-[60px] min-h-[60px]"><img class="h-[full] w-auto max-w-[140px] block m-0 py-3"  loading="lazy" decoding="async" src="/assets/images/Git-Logo-2Color.svg" title="Git" alt="Git Logo"></li>
+		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[100px] block m-0 "  loading="lazy" decoding="async" src="/assets/images/vite.svg" title="Vite" alt="Vite Logo"></li>
+		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[160px] block m-0 py-3"  loading="lazy" decoding="async" src="/assets/images/Vue.js.svg" title="Vue.js" alt="Vue.js Logo"></li>
+		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[160px] block m-0"  loading="lazy" decoding="async" src="/assets/images/alpine_long.svg" title="Alpine.js" alt="Alpine.js Logo"></li>
+		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0"  loading="lazy" decoding="async" src="/assets/images/tailwindcss-logotype.svg" title="Tailwind CSS" alt="TailwindCSS Logo"></li>
+		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[140px] block m-0"  loading="lazy" decoding="async" src="/assets/images/WordPress-logotype-standard.svg" title="WordPress" alt="WordPress Logo"></li>
+		<li class="flex relative h-[70px] min-h-[70px]"><img class="h-[full] w-auto max-w-[120px] block m-0"  loading="lazy" decoding="async" src="/assets/images/shopify_logo_whitebg.svg" title="Shopify" alt="Shopify Logo"></li>
+		<li title="Jigsaw by Tighten" class="flex gap-1 items-center justify-center uppercase font-semibold text-black cursor-default"><img class="h-[25px] w-auto block m-0"  loading="lazy" decoding="async" src="/assets/images/jigsaw-logo.svg" alt="Jigsaw Logo"><span>Jigsaw</span></li>
 	</ul>
 </div>
 

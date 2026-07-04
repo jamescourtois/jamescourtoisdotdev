@@ -1,7 +1,6 @@
 ---
 title: STL Biz Dash
 url: https://stlbizdash.com
-image: stlbizdash.png
-status: live
+image: stlbizdash
 order: 1;
 ---

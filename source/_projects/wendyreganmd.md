@@ -1,7 +1,6 @@
 ---
 title: Harbour Direct Primary Care
 url: https://wendyreganmd.com
-image: wendyreganmd.png
+image: wendyreganmd
 order: 1;
-status: live
 ---

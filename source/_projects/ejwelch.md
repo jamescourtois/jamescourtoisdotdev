@@ -1,7 +1,6 @@
 ---
 title: EJ Welch
 url: https://ejwelch.com
-image: ejwelch.png
-status: live
+image: ejwelch
 order: 1;
 ---

@@ -1,7 +1,6 @@
 ---
 title: Artisan Plastic Surgery
 url: https://artisanplasticsurgery.com
-image: artisanplasticsurgery.png
-status: live
+image: artisanplasticsurgery
 order: 1;
 ---

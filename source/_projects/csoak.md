@@ -1,7 +1,6 @@
 ---
 title: Cosmetic Surgery Affiliates
 url: https://csoak.com
-status: live
-image: csaok.png
+image: csaok
 order: 1;
 ---
